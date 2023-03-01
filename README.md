@@ -23,7 +23,7 @@ claim these are the following specs needed for minimum of hardware:
   - about 53.5 Kbits/s per player
 - Operating system: Windows Server
 
-## Found these links for setting up dayz server:
+## Found these links for setting up a bare-bones dayz server:
 
 https://write.corbpie.com/installing-and-setting-up-a-dayz-standalone-server-on-windows-server-2016-guide/
 https://forums.dayz.com/topic/239635-dayz-server-files-documentation/?tab=comments#comment-2396561
@@ -32,3 +32,8 @@ https://developer.valvesoftware.com/wiki/SteamCMD#SteamCMD_Login
 ## 
 https://learn.microsoft.com/en-us/azure/virtual-machines/sizes
 For size, would recommend a B-series (burstable) vm size, as the players would vary greatly.
+
+## For terraform
+https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/public_ip
+
+## Needed to add vcredist and DirectX
