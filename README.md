@@ -27,6 +27,7 @@ claim these are the following specs needed for minimum of hardware:
 
 https://write.corbpie.com/installing-and-setting-up-a-dayz-standalone-server-on-windows-server-2016-guide/
 https://forums.dayz.com/topic/239635-dayz-server-files-documentation/?tab=comments#comment-2396561
+https://developer.valvesoftware.com/wiki/SteamCMD#SteamCMD_Login
 
 ## 
 https://learn.microsoft.com/en-us/azure/virtual-machines/sizes
