@@ -10,7 +10,7 @@ resource "azurerm_windows_virtual_machine" "vm" {
   ]
   os_disk {
     storage_account_type = "StandardSSD_LRS"
-    caching = "ReadWrite"
+    caching              = "ReadWrite"
   }
   source_image_reference {
     publisher = "MicrosoftWindowsServer"
