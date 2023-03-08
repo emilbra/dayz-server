@@ -8,3 +8,7 @@ variable "tenant_id" {
   type        = string
   description = "the tenant id"
 }
+
+variable "principal_id" {
+  type = string
+}
