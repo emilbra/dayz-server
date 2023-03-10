@@ -1,0 +1,28 @@
+﻿- name: Download and install SteamCMD
+  hosts: _server
+  gather_facts: false
+  vars:
+    ansible_user: serveradmin
+    ansible_connection: winrm
+    ansible_winrm_transport: ntlm
+    ansible_winrm_server_cert_validation: ignore
+    ansible_port: 5985
+
+  tasks:
+   - name: Download SteamCMD.zip
+     ansible.windows.win_get_url:
+       url: https://steamcdn-a.akamaihd.net/client/installer/steamcmd.zip
+       dest: C:\steamcmd.zip
+       force: true
+
+   - name: Expand SteamCMD Archive
+     community.windows.win_unzip:
+      src: C:\steamcmd.zip
+      dest: C:\steamcmd\
+   
+#test pending
+   - name: Install SteamCMD
+     ansible.windows.win_powershell:
+      script: C:\steamcmd\steamcmd.exe
+     async: 45
+     poll: 0

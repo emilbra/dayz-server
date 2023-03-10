@@ -1,8 +1,6 @@
 ﻿plugin: azure_rm
 auth_source: auto
 # by default all rgs are scanned , add the include_vm_resource_groups tag if not desired
-include_vm_resource_groups:
-  - default_rg
 
 keyed_groups:
  - key: tags.role | default('none')

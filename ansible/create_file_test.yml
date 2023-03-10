@@ -1,0 +1,15 @@
+﻿- name: Create test.txt on C:\
+  hosts: _server
+  gather_facts: false
+  vars:
+    ansible_user: serveradmin
+    ansible_connection: winrm
+    ansible_winrm_transport: ntlm
+    ansible_winrm_server_cert_validation: ignore
+    ansible_port: 5985
+
+  tasks:
+  - name: Create a file
+    ansible.windows.win_file:
+      path: C:\test.txt
+      state: touch
