@@ -11,13 +11,6 @@ resource "azurerm_key_vault" "keyvault" {
   enable_rbac_authorization = true
 }
 
-resource "azurerm_role_assignment" "secrets_contributor_role" {
-  scope                = azurerm_key_vault.keyvault.id
-  role_definition_name = "Key Vault Secrets Officer"
-  principal_id         = var.principal_id
-}
-
-
 # Not "SAFE"
 resource "azurerm_key_vault_secret" "admin_password" {
   name         = "admin-password-${random_pet.pet.id}"
