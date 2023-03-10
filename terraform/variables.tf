@@ -12,3 +12,7 @@ variable "tenant_id" {
 variable "principal_id" {
   type = string
 }
+
+variable "alert_email" {
+  type = string
+}
