@@ -9,7 +9,11 @@ principal_id = ""
 alert_email  = ""
 ```
 
-Gather tenant_id and principal_id from your azure subscription. A suggested VMSize is Standard_D2s_v3
+Gather tenant_id and principal_id from your azure subscription. A suggested VMSize is Standard_D2s_v3.
+
+Make sure you are authenticated against azure. This can be done using Azure Cli
+``` az login ```
+or using environment vars.
 
 Then run terraform, like this:
 
