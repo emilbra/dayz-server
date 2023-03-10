@@ -9,9 +9,9 @@ principal_id = ""
 alert_email  = ""
 ```
 
-Gather tenant_id and principal_id from your azure subscription. A suggested VMSize is Standard_D2s_v3
+Gather tenant_id and principal_id from your Azure subscription. A suggested VMSize is Standard_D2s_v3
 
-Then run terraform, like this:
+Then run terraform, like this, while inside the terraform folder:
 
 1. ``` terraform init ```  - initializes the terraform module
 2. ``` terraform plan -var-file myvars.tfvars ``` - creates a plan based on the current terraform code.
